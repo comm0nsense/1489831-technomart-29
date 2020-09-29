@@ -1,0 +1,355 @@
+/* variables */
+
+:root {
+  --basic-red: #EE3643;
+  --yellow: #FFBF47;
+  --yellow-light: #FFC047;
+  --yellow-light-extra: #FFD180;
+  --blue: #3BBCE3;
+  --lilac: #DC91D8;
+  --green-light: #8ED78F;
+  --green: #63A63E;
+  --basic-gray-dark: #888888;
+  --gray-dark-extra: #293449;
+  --gray-dark: #32425C;
+  --gray-light: #F9F5F0;
+  --gray-item-price: #A9A9A9;
+  --basic-grey-light: #F1F5F7;
+  --white-transparent: rgba(0, 0, 0, 0.0001);
+  --black: #000000;
+  --white: #ffffff;
+  --gray-light-footer: #F3F7F9;
+  --yellow-light-footer: #FFD180;
+
+  --categories-button: rgba(255, 255, 255, 0.3);
+  --slider-background: rgba(255, 255, 255, 0.25);
+}
+
+/* Global */
+body {
+  min-width: 940px;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Cuprum', sans-serif; */
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--white);
+
+}
+
+.page a {
+  text-decoration: none;
+}
+
+/* Всем изображениям укажем max-width: 100%, чтобы они не вылезали за пределы своих родительских элементов, и укажем автоматическую высоту, чтобы изменение размеров было пропорциональным. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Basic Button */
+.button {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Contacts-phone General */
+
+.contacts-phone {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+
+/* Main Header */
+.sub-navigation,
+.main-navigation,
+.sub-header {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.site-navigation {
+  list-style: none;
+  background-color: var(--gray-dark);
+}
+
+.site-navigation a,
+.sub-navigation a {
+  color: var(--white);
+}
+
+.sub-navigation {
+  background-color: var(--gray-dark-extra);
+}
+
+.login-link,
+.reg-link {
+  color: var(--black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.description {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+
+.phone-header {
+  color: var(--basic-red);
+}
+
+.contact-details {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gray-dark);
+}
+
+/* Main Categories */
+
+.categories {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.categories-list {
+  list-style: none;
+}
+
+.materials {
+  background-color: var(--yellow);
+}
+
+.instruments {
+  background-color: var(--blue);
+}
+
+.technics {
+  background-color: var(--lilac);
+}
+
+.discounts {
+  background-color: var(--green-light);
+}
+
+.delivery {
+  background-color: var(--yellow-light);
+}
+
+.categories-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.categories-item a {
+  color: var(--white);
+}
+
+.categories-button {
+  background-color: var(--categories-button);
+}
+
+/* Main Categories - Slider */
+
+.product-slider {
+  /* потому что пока нет фотки для фона */
+  background-color: black;
+}
+
+.product-slider h3 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.product-slider p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+
+}
+
+.slider-background {
+  background-color: var(--slider-background);
+}
+
+.slider-button {
+  background-color: var(--basic-red);
+}
+
+.product-slider a {
+  color: var(--white);
+}
+
+/* Bestsellers, Brands - General */
+.section-general {
+  background-color: var(--gray-light);
+  font-family: 'Cuprum', sans-serif;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--gray-dark);
+}
+.section-button {
+  background-color: var(--basic-red);
+  color: var(--white);
+}
+
+/* Bestsellers */
+.bestsellers-list {
+  list-style: none;
+  font-weight: 700;
+}
+
+.bestsellers-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--black);
+
+}
+
+.item-price {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.standard-price {
+  text-decoration: line-through;
+  color: var(--gray-item-price);
+}
+
+.sales-price {
+  background-color: var(--basic-red);
+  color: var(--white);
+}
+
+
+/* Services, About & Contacts - General */
+
+.services h2,
+.services h3,
+.about h2,
+.contacts h2 {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+/* Services */
+
+.services {
+  background-color: var(--basic-grey-light);
+}
+
+.services h3{
+  color: var(--gray-dark);
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-item {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  background-color: var(--gray-dark);
+  color: var(--white);
+}
+
+.service-selected {
+  background-color: var(--white);
+  color: var(--gray-dark);
+}
+
+.services-button {
+  color: var(--white);
+  background-color: var(--basic-red);
+}
+
+/* About */
+.delivery-partners {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.about-button {
+  color: var(--white);
+  background-color: var(--basic-red);
+}
+
+/* Contacts */
+.contacts-button {
+  color: var(--white);
+  background-color: var(--basic-red);
+}
+
+
+/* Footer General */
+.main-footer {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: var(--gray-light-footer);
+}
+
+/* Footer navigation */
+
+.footer-navigation {
+  background-color: var(--gray-dark);
+}
+
+.footer-navigation a {
+  color: var(--gray-light-footer);
+
+}
+
+.footer-sub-navigation a {
+  color: var(--yellow-light-footer);
+}
+.footer-navigation-list{
+  list-style: none;
+}
+
+.phone-footer {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Footer social */
+.footer-social {
+  background-color: var(--gray-dark-extra);
+  line-height: 18px;
+  /* color: var(--white); */
+  /* если не указат цвет, то он все равно белый. Откуда он наследуется? */
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-list a {
+  color: var(--white);
+}
+
+.footer-contacts {
+  color: var(--yellow-light-footer);
+}
+
+
