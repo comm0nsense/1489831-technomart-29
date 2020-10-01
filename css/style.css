@@ -31,6 +31,13 @@
   --slider-button-hover: #CA2C37;
   --slider-button-active: #BA2732;
 
+  --order-button: #63A63E;
+  --green-shadow: #367315;
+  --order-button-hover: #5FBB2D;
+  --order-button-active: #518534;
+
+  --brands-border: #EAEAEA;
+
 }
 
 /* Global */
@@ -99,6 +106,13 @@ img {
 
 .sub-navigation {
   background-color: var(--gray-dark-extra);
+}
+
+.button-order {
+  background-color: var(--order-button);
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
 }
 
 .login-link,
@@ -272,6 +286,51 @@ img {
   background-color: var(--basic-red);
   color: var(--white);
 }
+
+/* Bestsellers - Interactive elements*/
+.button-buy {
+  background-color: var(--order-button);
+  color: var(--white);
+  box-shadow: inset 0px -3px 0px var(--green-shadow);
+  border-radius: 2px;
+}
+
+.button-buy:hover {
+  background-color: var(--order-button-hover);
+}
+
+.button-buy:active {
+  background-color: var(--order-button-active);
+}
+
+.button-bookmark {
+  border: 3px solid var(--green);
+  border-radius: 2px;
+  color: var(--gray-dark);
+}
+
+.button-bookmark:hover {
+  border-color: var(--gray-dark);
+}
+
+.button-bookmark:active {
+  border-color: var(--gray-dark);
+  color: var(--gray-dark);
+  /* в макете почему-то цвет более светлый, а код цвета тот же
+  такое ощущение, что прозраность надо отрегулировать, но
+  в макете не нашла */
+}
+
+/* Brands */
+.brands-list {
+  list-style: none;
+}
+.brands-item {
+  border: 1px solid var(--brands-border);
+  /* не видно border почему-то + макете одинаковые параметры для hover & active,
+  а по факту сначала добавляется тень, а потом блеклость */
+}
+
 
 
 /* Services, About & Contacts - General */
