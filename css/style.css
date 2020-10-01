@@ -35,9 +35,17 @@
   --green-shadow: #367315;
   --order-button-hover: #5FBB2D;
   --order-button-active: #518534;
-
+  --bookmark-active: rgba(50, 66, 92, 0.5);
   --brands-border: #EAEAEA;
 
+  --service-button-shadow: #405069;
+
+  --brands-shadow: rgba(0, 0, 0, 0.15);
+  --brands-background-active: rgba(255, 255, 255, 0.5);
+
+  --footer-main-nav-active: rgba(241, 245, 247, 0.5);
+  --footer-sub-nav-active: rgba(255, 209, 128, 0.5);
+  --footer-contacts: #EE3643;
 }
 
 /* Global */
@@ -314,21 +322,28 @@ img {
 }
 
 .button-bookmark:active {
-  border-color: var(--gray-dark);
-  color: var(--gray-dark);
-  /* в макете почему-то цвет более светлый, а код цвета тот же
-  такое ощущение, что прозраность надо отрегулировать, но
-  в макете не нашла */
+  border-color: var(--bookmark-active);
+  color: var(--bookmark-active);
 }
 
 /* Brands */
 .brands-list {
   list-style: none;
 }
+
 .brands-item {
   border: 1px solid var(--brands-border);
   /* не видно border почему-то + макете одинаковые параметры для hover & active,
   а по факту сначала добавляется тень, а потом блеклость */
+}
+
+.brands-item:hover {
+  filter: drop-shadow(0px 4px 20px var(--brands-shadow));
+}
+
+.brands-active {
+  background-color: var(--brands-background-active);
+  filter: drop-shadow(0px 4px 20px var(--brands-shadow));
 }
 
 
@@ -366,16 +381,24 @@ img {
   font-weight: 700;
   background-color: var(--gray-dark);
   color: var(--white);
-}
-
-.service-selected {
-  background-color: var(--white);
-  color: var(--gray-dark);
+  box-shadow: 0px 1px 0px var(--gray-dark-extra), inset 0px 1px 0px (--service-button-shadow);
 }
 
 .services-button {
   color: var(--white);
   background-color: var(--basic-red);
+}
+
+/* Servie-item - Interactive elements */
+
+.service-item:hover {
+  background-color: var(--gray-dark-extra);
+}
+
+.service-item:active {
+  background-color: var(--white);
+  color: var(--gray-dark);
+  box-shadow: 0px 1px 0px var(--white), inset 0px 1px 0px var(--white);
 }
 
 /* About */
@@ -430,6 +453,21 @@ img {
   line-height: 24px;
 }
 
+/* Footer navigation - Interactive*/
+.footer-navigation-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-main-nav a:active {
+  color: var(--footer-main-nav-active);
+  text-decoration: none;
+}
+
+.footer-sub-nav a:active {
+  color: var(--footer-sub-nav-active);
+  text-decoration: none;
+}
+
 /* Footer social */
 .footer-social {
   background-color: var(--gray-dark-extra);
@@ -448,6 +486,15 @@ img {
 
 .footer-contacts {
   color: var(--yellow-light-footer);
+}
+
+/* Footer social - Interactive */
+.footer-contacts:hover {
+  text-decoration: underline;
+}
+.footer-contacts:active {
+  text-decoration: none;
+  color: var(--footer-contacts);
 }
 
 /* Modal - Write Us */
