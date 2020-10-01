@@ -23,6 +23,14 @@
 
   --categories-button: rgba(255, 255, 255, 0.3);
   --slider-background: rgba(255, 255, 255, 0.25);
+
+  --active-link: rgba(255, 255, 255, 0.5);
+  --categories-button-hover: rgba(197, 197, 197, 0.3);
+  --categories-button-active: rgba(169, 169, 169, 0.3);
+
+  --slider-button-hover: #CA2C37;
+  --slider-button-active: #BA2732;
+
 }
 
 /* Global */
@@ -118,6 +126,16 @@ img {
   color: var(--gray-dark);
 }
 
+/* Main Header - Interactive elements */
+.site-navigation a:hover {
+  background-color: var(--gray-dark-extra);
+}
+
+.site-navigation a:active {
+  background-color: var(--gray-dark-extra);
+  color: var(--active-link);
+}
+
 /* Main Categories */
 
 .categories {
@@ -163,6 +181,15 @@ img {
   background-color: var(--categories-button);
 }
 
+/* Main Categories - Interactive elements */
+.categories-item a:hover {
+  background-color: var(--categories-button-hover);
+}
+
+.categories-item a:active {
+  background-color: var(--categories-button-active);
+}
+
 /* Main Categories - Slider */
 
 .product-slider {
@@ -194,6 +221,15 @@ img {
   color: var(--white);
 }
 
+/* Main Categories - Slider - Ineractive elements */
+.product-slider a:hover {
+  background-color: var(--slider-button-hover);
+}
+
+.product-slider a:active {
+  background-color: var(--slider-button-active);
+}
+
 /* Bestsellers, Brands - General */
 .section-general {
   background-color: var(--gray-light);
@@ -203,6 +239,7 @@ img {
   font-weight: 400;
   color: var(--gray-dark);
 }
+
 .section-button {
   background-color: var(--basic-red);
   color: var(--white);
@@ -248,13 +285,14 @@ img {
   line-height: 30px;
   font-weight: 400;
 }
+
 /* Services */
 
 .services {
   background-color: var(--basic-grey-light);
 }
 
-.services h3{
+.services h3 {
   color: var(--gray-dark);
 }
 
@@ -323,7 +361,8 @@ img {
 .footer-sub-navigation a {
   color: var(--yellow-light-footer);
 }
-.footer-navigation-list{
+
+.footer-navigation-list {
   list-style: none;
 }
 
@@ -352,4 +391,8 @@ img {
   color: var(--yellow-light-footer);
 }
 
-
+/* Modal - Write Us */
+.button-modal-write-us {
+  color: var(--white);
+  background-color: var(--basic-red);
+}
