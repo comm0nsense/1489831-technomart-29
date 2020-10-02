@@ -273,14 +273,14 @@ img {
   font-weight: 700;
 }
 
-.bestsellers-item h3 {
+.product h3 {
   font-size: 18px;
   line-height: 20px;
   color: var(--black);
 
 }
 
-.item-price {
+.product-price {
   font-size: 17px;
   line-height: 18px;
 }
@@ -417,6 +417,38 @@ img {
   color: var(--white);
   background-color: var(--basic-red);
 }
+
+/* Catalog */
+.user-account {
+  color: var(--black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-account-nav {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--gray-dark);
+  list-style: none;
+}
+
+/* Catalog - Breadcrumbs */
+.breadcrumbs {
+  list-style: none;
+  font-size: 13px;
+}
+
+.breadcrumbs a {
+  color: var(--black);
+}
+
+/* Catalog - Main */
+.product-list {
+  list-style: none;
+}
+
 
 
 /* Footer General */
