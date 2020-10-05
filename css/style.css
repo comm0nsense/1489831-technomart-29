@@ -50,6 +50,10 @@
   --catalog-light-gray: #F2F6F8;
   --light-gray-boder: #E5E5E5;
   --light-gray-border-hover: #C5C5C5;
+  --basic-green-bright: #5FBB2D;
+
+  --gray-active: #161D29;
+
 }
 
 /* Global */
@@ -120,6 +124,15 @@ img {
   background-color: var(--gray-dark-extra);
 }
 
+.header-bookmark,
+.button-cart {
+  text-transform: none;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 .button-order {
   background-color: var(--order-button);
   font-size: 18px;
@@ -161,6 +174,39 @@ img {
   background-color: var(--gray-dark-extra);
   color: var(--active-link);
 }
+
+.button-order:hover {
+  background-color: var(--basic-green-bright);
+}
+
+.button-order:active {
+  background-color: var(--green);
+  color: var(--brands-background-active);
+}
+
+.header-bookmark:active,
+.button-cart:active {
+  background-color: var(--gray-active);
+  color: var(--brands-background-active);
+}
+
+.header-search {
+  background-color: var(--gray-dark-extra);
+}
+
+.header-search::placeholder {
+  color: var(--white);
+}
+
+.header-search:focus {
+  background-color: var(--white);
+  outline: none;
+}
+
+.header-search:focus::placeholder {
+  color: var(--black);
+}
+
 
 /* Main Categories */
 
@@ -205,6 +251,7 @@ img {
 
 .categories-button {
   background-color: var(--categories-button);
+  color: var(--brands-background-active);
 }
 
 /* Main Categories - Interactive elements */
