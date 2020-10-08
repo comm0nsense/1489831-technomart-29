@@ -54,6 +54,8 @@
 
   --gray-active: #161D29;
 
+  --logo-shadow: rgba(0, 0, 0, 0.24);
+
 }
 
 /* Global */
@@ -79,6 +81,19 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* logo-technomart */
+.technomart-logo {
+  width: 220px;
+  height: 47px;
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--logo-shadow);
+  padding: 12px 56px;
+}
+
+.technomart-logo:active {
+  background-color: var(--slider-button-active);
 }
 
 /* Basic Button */
@@ -146,6 +161,16 @@ img {
   font-size: 21px;
   line-height: 21px;
 }
+.login-link:hover,
+.reg-link:hover {
+  color: var(--basic-red);
+}
+.login-link:active,
+.reg-link:active {
+  color: var(--light-gray-border-hover);
+}
+
+
 
 .description {
   font-style: italic;
@@ -482,6 +507,15 @@ img {
   color: var(--gray-dark);
   list-style: none;
 }
+
+.user-account-nav:hover {
+  color: var(--basic-red);
+}
+.user-account-nav:active,
+.user-account:active {
+  color: var(--light-gray-border-hover);
+}
+
 
 /* Catalog - Breadcrumbs */
 .breadcrumbs {
