@@ -757,15 +757,20 @@ img {
   color: var(--gray-light-footer);
 }
 
+.footer-navigation-wrapper {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+}
+
 /* Footer navigation */
 
 .main-footer {
   background-color: var(--gray-dark);
 }
 
-.main-footer a {
-  color: var(--gray-light-footer);
 
+.footer-main-nav a {
+  color: var(--white);
 }
 
 .footer-sub-navigation a {
@@ -779,6 +784,7 @@ img {
 .phone-footer {
   font-size: 18px;
   line-height: 24px;
+  color: var(--white);
 }
 
 /* Footer navigation - Interactive*/
@@ -829,6 +835,11 @@ img {
 .main-footer {
   display: grid;
   grid-template-rows: 1fr min-content;
+}
+
+.footer-social-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 
 /* Modal - Index - Write Us */
