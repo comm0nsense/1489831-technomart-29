@@ -111,7 +111,7 @@ img {
 
 .sub-header-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr min-content min-content;
+  grid-template-columns: 1fr 1fr min-content max-content;
 }
 
 
@@ -398,7 +398,7 @@ img {
   gap: 20px;
 }
 
- .categories-list {
+.categories-list {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -716,10 +716,26 @@ img {
   color: var(--gray-dark);
   text-transform: uppercase;
   background-color: var(--catalog-light-gray);
+  order: 1;
+}
+
+.product-type-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
 }
 
 .product-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(3, 318px);
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* Catalog - Pagination */
