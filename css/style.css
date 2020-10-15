@@ -245,9 +245,14 @@ img {
 
 .sub-navigation-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
+
+.sub-navigation-wrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .header-search {
   width: 271px;
@@ -951,6 +956,7 @@ img {
   flex-wrap: wrap;
   justify-content: flex-end;
 }
+
 /* Footer navigation - Interactive*/
 .footer-site-nav:hover,
 .footer-catalog-nav:hover {
