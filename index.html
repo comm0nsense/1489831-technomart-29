@@ -112,13 +112,13 @@
           <li class="slider-item slide slide-current ">
             <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
-            <img src="img/slider-perforator.jpg" width="620" height="266" alt="Перфораторы">
+            <img class="slider-image" src="img/slider-perforator.jpg" width="620" height="266" alt="Перфораторы">
             <a class="button slider-button" href="catalog.html">Открыть каталог</a>
           </li>
           <li class="slider-item slide">
             <h3>Дрели</h3>
             <p>Соседям на радость!</p>
-            <img src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
+            <img class="slider-image" src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
             <a class="button slider-button" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
@@ -133,7 +133,6 @@
         <ul class="bestsellers-list">
           <li class="bestseller-product">
             <a class="product-link" href="">
-              <div class="product-link-wrapper">
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/bestseller-1.jpg" width="184" height="164"
                     alt="Перфоратор Bosch BFG 9000">
@@ -143,12 +142,10 @@
                   <p class="product-price standard-price">32500 Р.</p>
                   <p class="product-price sales-price">25500 Р.</p>
                 </div>
-              </div>
             </a>
           </li>
           <li class="bestseller-product">
             <a class="product-link new-item" href="">
-              <div class="product-link-wrapper">
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/bestseller-2.jpg" width="127" height="112"
                     alt="Перфоратор BOSCH BFG 3000">
@@ -158,12 +155,10 @@
                   <p class="product-price standard-price">22500 Р.</p>
                   <p class="product-price sales-price">15500 Р.</p>
                 </div>
-              </div>
             </a>
           </li>
           <li class="bestseller-product">
             <a class="product-link" href="">
-              <div class="product-link-wrapper">
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/bestseller-3.jpg" width="148" height="128"
                     alt="Перфоратор BOSCH BFG 6000">
@@ -173,12 +168,10 @@
                   <p class="product-price standard-price">30500 Р.</p>
                   <p class="product-price sales-price">25500 Р.</p>
                 </div>
-              </div>
             </a>
           </li>
           <li class="bestseller-product">
             <a class="product-link new-item" href="">
-              <div class="product-link-wrapper">
                 <div class="product-image-wrapper">
                   <img class="product-image" src="img/bestseller-4.jpg" width="127" height="112"
                     alt="Перфоратор BOSCH BFG 2000">
@@ -188,9 +181,10 @@
                   <p class="product-price standard-price"></p>
                   <p class="product-price sales-price">12500 Р.</p>
                 </div>
-              </div>
             </a>
           </li>
+
+
         </ul>
 
       </section>
@@ -390,30 +384,46 @@
 
   <!-- Тут будут 2 модальных окна: 1) карта, 2) форма обратной связи -->
   <section class="modal modal-map">
-    <h2>Схема проезда</h2>
-    <img src="img/map-popup.jpg" width="1736" height="779" alt="Cхема проезда">
+    <h2 class="visually-hidden">Схема проезда</h2>
+    <!-- <img src="img/map-popup.jpg" width="943" height="449"alt="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург"> -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15988.829002401944!2d30.305537938647017!3d59.9387191690553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1603350636714!5m2!1sen!2sru"
+      width="943" height="449" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0" title="Офис компании по адресу ул.Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <!-- Здесь будет форма обратной связи -->
-    <div class="modal-container">
-    <form action="">
-      <p>
-      <label for="user-name">Ваше имя:</label>
-        <input id="user-name" type="text" name="username" placeholder="Имя Фамилия">
+    <form class="user-feedback-form" action="">
 
-      <label for="user-email">Ваш e-mail:</label>
-        <input type="email" name="" id="user-email" placeholder="email@example@.com">
-      </p>
-      <p>
-      <label for="user-feedback">Текст письма:</label>
-        <textarea name="feedback" id="user-feedback" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </p>
-      <input type="submit" value="Отправить">
+      <div class="user-feedback-wrapper">
+
+        <div class="feedback-user-details">
+          <label>Ваше имя:
+            <p> <input type="text" name="username" placeholder="Имя Фамилия"></p>
+          </label>
+
+          <label>Ваш e-mail:
+            <p><input type="email" name="email" placeholder="email@example@.com"></p>
+          </label>
+        </div>
+
+        <div class="feedback-user-text">
+          <label for="user-feedback">Текст письма:</label>
+          <p> <textarea name="feedback" id="user-feedback" rows="4" placeholder="В свободной форме"></textarea></p>
+        </div>
+
+      </div>
+
+      <div class="modal-button-wrapper">
+        <input class="modal-button" type="submit" value="Отправить">
+      </div>
+
     </form>
-  </div>
-    <!-- <a class="button button-modal-write-us" type="Submit">Отправить</a> -->
+
+    <button class="modal-close modal-close-write-us" type="button" aria-label="Закрыть"></button>
+
   </section>
 
 </body>
