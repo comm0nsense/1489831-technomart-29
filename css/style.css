@@ -192,7 +192,7 @@ img {
   left: 149px;
 }
 
-
+.bestseller-product h3,
 .catalog-product h3 {
   order: 2;
 }
@@ -206,6 +206,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* visibility: hidden; */
 }
 
 .services-description {
@@ -1097,21 +1098,33 @@ img {
   margin-bottom: 20px;
   width: 220px;
   min-height: 145px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
+
+.brands-item-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.brands-item-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .brands-item:hover {
   box-shadow: 0px 4px 20px var(--brands-shadow);
 }
 
-.brands-item img:active {
-  opacity: 0.5;
-}
-
 .brands-item:active {
   box-shadow: 0px 4px 20px var(--brands-shadow);
+  opacity: 0.5;
 }
 
 /* Services, About & Contacts - General */
@@ -1132,8 +1145,6 @@ img {
 .services {
   background-color: var(--basic-grey-light);
 }
-
-
 
 .services h2 {
   margin: 0;
@@ -1168,12 +1179,21 @@ img {
   font-weight: 700;
   background-color: var(--gray-dark);
   color: var(--white);
-  box-shadow: 0px 1px 0px var(--gray-dark-extra), inset 0px 1px 0px (--service-button-shadow);
+  box-shadow: inset 0px 1px 0px var(--service-button-shadow);
+  border-bottom: 1px solid var(--gray-dark-extra);
   width: 240px;
   height: 61px;
   padding-left: 22px;
   padding-top: 14px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.service-item.current {
+  background-color: var(--white);
+  color: var(--gray-dark);
+  box-shadow: none;
+  border-bottom: 1px solid var(--white);
 }
 
 .service-slide.active {
@@ -1190,22 +1210,30 @@ img {
   background-image: url("files/services-delivery.svg");
 }
 
-.services-button {
-  color: var(--white);
-  background-color: var(--basic-red);
-}
-
-/* Servie-item - Interactive elements */
+/* Service-item - Interactive elements */
 
 .service-item:hover {
   background-color: var(--gray-dark-extra);
 }
 
+.service-item.current:hover {
+  background-color: var(--white);
+}
+
 .service-item:active {
   background-color: var(--white);
   color: var(--gray-dark);
-  box-shadow: 0px 1px 0px var(--white), inset 0px 1px 0px var(--white);
+  box-shadow: 0px 1px 0px var(--white);
+  border-bottom: 1px solid var(--white);
 }
+
+
+.services-button {
+  color: var(--white);
+  background-color: var(--basic-red);
+}
+
+
 
 /* About */
 .delivery-partners {
