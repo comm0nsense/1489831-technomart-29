@@ -195,8 +195,6 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
-  /* top: -300px; */
-  /* top: 100px; */
   left: 149px;
 }
 
@@ -214,11 +212,13 @@ img {
   left: 0;
 }
 
-.bestseller-product:hover .product-image {
+.bestseller-product:hover .product-image,
+.catalog-product:hover .product-image {
   display: none;
 }
 
-.bestseller-product:hover .product-buttons-wrapper {
+.bestseller-product:hover .product-buttons-wrapper,
+.catalog-product:hover .product-buttons-wrapper {
   display: flex;
 }
 
