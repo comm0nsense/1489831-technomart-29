@@ -191,7 +191,7 @@ img {
   content: "";
   width: 70px;
   height: 70px;
-  background-image: url("files/label-new.png");
+  background-image: url("files/label-new.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -221,7 +221,6 @@ img {
 .bestseller-product:hover .product-buttons-wrapper {
   display: flex;
 }
-
 
 .services-description {
   /* display: grid; */
