@@ -38,7 +38,7 @@
             и инструментов для ремонта
           </p>
           <p class="contact-details">
-            <a class="phone-button" href="tel:+78126660266">+7 (812) 666-02-66</a>
+            <a class="phone-button" href="tel:+78125550555">+7 (812) 555-05-55</a>
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
           <div class="header-buttons-wrapper">
@@ -108,21 +108,27 @@
             <a class="button categories-button" href="">бесплатно</a>
           </li>
         </ul>
-
-        <ul class="slider-list">
-          <li class="slider-item slide slide-current ">
-            <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки</p>
-            <img class="slider-image" src="img/slider-perforator.jpg" width="620" height="266" alt="Перфораторы">
-            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
-          </li>
-          <li class="slider-item slide">
-            <h3>Дрели</h3>
-            <p>Соседям на радость!</p>
-            <img class="slider-image" src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
-            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
-          </li>
-        </ul>
+        <div class="slider-list-wrapper">
+          <ul class="slider-list">
+            <li class="slider-item slide slide-current ">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <img class="slider-image" src="img/slider-perforator.jpg" width="620" height="266" alt="Перфораторы">
+            </li>
+            <li class="slider-item slide">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <img class="slider-image" src="img/slider-drill.jpg" width="620" height="266" alt="Дрели">
+            </li>
+          </ul>
+          <a сlass="slider-open-catalog" href="catalog.html">Открыть каталог</a>
+          <button class="slider-button right-button"> <span class="visually-hidden">Влево</span></button>
+          <button class="slider-button left-button"><span class="visually-hidden">Вправо</span></button>
+          <div class="slider-navigation">
+            <button type="button" aria-label="Первый слайд"></button>
+            <button class="current" type="button" aria-label="Второй слайд-Дрели"></button>
+          </div>
+        </div>
 
       </section>
 
@@ -264,7 +270,7 @@
             <li class="service-item">Кредит</li>
           </ul>
           <ul class="service-slider">
-            <li class="service-slide active">
+            <li class="service-slide delivery-slide active">
               <h3 class="service-slide-title">Доставка</h3>
               <p class="service-slide-description">
                 Мы с удовольствием доставим ваш товар прямо <br>
@@ -273,17 +279,17 @@
                 поднимая его на ваш этаж!
               </p>
             </li>
-            <li class="service-slide">
-              <h3>Гарантия</h3>
+            <li class="service-slide guarantee-slide ">
+              <h3 class="service-slide-title">Гарантия</h3>
               <p>
-                Если купленный у нас товар поломается или заискрит, а также в случае пожара,
+                Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара,
                 спровоцированного его возгоранием, вы всегда можете быть уверены в нашей
                 гарантии. Мы обменяем сгоревший товар на новый. <br>
                 Дом уж восстановите как-нибудь сами.
               </p>
             </li>
-            <li class="service-slide">
-              <h3>Кредит</h3>
+            <li class="service-slide credit-slide ">
+              <h3 class="service-slide-title">Кредит</h3>
               <p>
                 Залезть в долговую яму стало проще! <br>
                 Кредитные консультанты придут вам на помощь. <br>
