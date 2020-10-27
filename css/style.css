@@ -318,9 +318,10 @@ p.info-general {
 
 .header-logo {
   width: 220px;
-  height: 42px;
+  height: 47px;
+  position: absolute;
   background-color: var(--basic-red);
-  box-shadow: 0px 5px 0px var(--logo-shadow);
+  box-shadow: inset 0px -5px 0px var(--logo-shadow);
 }
 
 .header-logo-img {
@@ -479,6 +480,7 @@ p.info-general {
   background-repeat: no-repeat;
   background-position: 17px 9px;
   opacity: 0.3;
+  margin-left: 219px;
 }
 
 .header-search:hover {
@@ -1094,7 +1096,7 @@ p.info-general {
 }
 
 .product-image-wrapper {
-  min-height: 184px;
+  min-height: 180px;
   display: flex;
   align-items: center;
 }
@@ -1102,7 +1104,7 @@ p.info-general {
 .product-price-wrapper {
   display: grid;
   grid-template-rows: 18px 1fr;
-  gap: 13px;
+  gap: 12px;
   justify-items: center;
 }
 
@@ -1130,11 +1132,15 @@ p.info-general {
 }
 
 .sales-price {
+  position: relative;
   background-color: var(--basic-red);
   color: var(--white);
-  padding: 10px 24px 10px 30px;
-  border-radius: 3px;
-  position: relative;
+  width: 122px;
+  height: 39px;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 31px;
+  box-sizing: border-box;
 }
 
 .sales-price::after {
@@ -1142,12 +1148,13 @@ p.info-general {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 19px 0 19px 20px;
+  border-width: 19.5px 0 19.5px 20px;
   border-color: transparent transparent transparent var(--basic-red);
   position: absolute;
-  top: 0;
-  left: 116px;
+  top: 0px;
+  left: 119px;
 }
+
 
 /* Bestsellers - Interactive elements*/
 .button-buy {
@@ -2159,7 +2166,7 @@ p.info-general {
 /* Modal - Index - Write Us */
 
 .modal {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   right: 0;
@@ -2204,7 +2211,7 @@ p.info-general {
 }
 
 .modal-write-us {
-  /* display: none; */
+  display: none;
   width: 620px;
   top: 100px;
   bottom: auto;
@@ -2213,25 +2220,14 @@ p.info-general {
   /* position: relative; */
 }
 
-/*
-.write-us-close::after {
-  content: "";
-  width: 21px;
-  height: 21px;
-  background-image: url("files/icon-close.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  position: absolute;
-  top: 14px;
-  left: 588px;
-} */
 
 .modal-write-us label {
   font-family: 'Cuprum', sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  margin-bottom: 13px;
+  /* margin-bottom: 13px; */
+  /* margin-top: 13px; */
 }
 
 
@@ -2260,6 +2256,7 @@ p.info-general {
   display: flex;
   justify-content: center;
   margin-top: 46px;
+  margin-bottom: 13px;
 }
 
 .feedback-user-details label {
@@ -2316,6 +2313,17 @@ p.info-general {
 
 }
 
+.modal-map {
+  display: none;
+  width: 943px;
+  height: 449px;
+  top: 100px;
+  bottom: auto;
+  border-top: 7px solid var(--basic-red);
+  box-shadow: 0px 4px 20px var(--brands-shadow);
+}
+
+
 /* Modal - Catalog - Add to Cart */
 
 
@@ -2348,17 +2356,6 @@ p.info-general {
 
 .continue-shopping {
   color: var(--black);
-}
-
-.modal-close {
-  position: absolute;
-  top: 14px;
-  left: 912px;
-  width: 21px;
-  height: 21px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
 }
 
 
@@ -2454,12 +2451,3 @@ p.info-general {
   border-radius: 5px;
 }
 
-
-.modal-map {
-  width: 943px;
-  height: 449px;
-  top: 100px;
-  bottom: auto;
-  border-top: 7px solid var(--basic-red);
-  box-shadow: 0px 4px 20px var(--brands-shadow);
-}
