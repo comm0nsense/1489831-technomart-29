@@ -120,47 +120,49 @@
             </fieldset>
 
             <fieldset>
-              <legend>Прозводители:</legend>
+              <legend class="brands-legend">Прозводители:</legend>
               <ul>
-                <li>
-                  <input type="checkbox" name="bosch" id="bosch" checked>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
                   <label for="bosch">Bosch</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="interskol" id="interskol">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interskol" id="interskol">
                   <label for="interskol">Интерскол</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="makita" id="makita" checked>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" id="makita"
+                    checked>
                   <label for="makita">Makita</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="dewalt" id="dewalt">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
                   <label for="dewalt">Dewalt</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="hitachi" id="hitachi">
-                  <label for="hitachi">Интерскол</label>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi">
+                  <label for="hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset>
-              <legend>Питание:</legend>
+              <legend class="power-type-legend">Питание:</legend>
               <ul>
-                <li>
-                  <input type="radio" name="type-of-power-supply" value="battery-powered" id="filter-battery-powered"
-                    checked>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="type-of-power-supply"
+                    value="battery-powered" id="filter-battery-powered" checked>
                   <label for="filter-battery-powered">Аккумулятроные</label>
                 </li>
-                <li>
-                  <input type="radio" name="type-of-power-supply" value="mains-powered" id="filter-mains-powered">
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="type-of-power-supply"
+                    value="mains-powered" id="filter-mains-powered">
                   <label for="filter-mains-powered">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
 
-            <button type="submit" class="filter-button button">Показать</button>
+            <button type="submit" class="filter-button">Показать</button>
 
           </form>
 
@@ -170,10 +172,17 @@
           <h2>Сортировка:</h2>
           <ul class="sorting-options">
             <div class="sorting-by-type-wrapper">
-              <li>По цене</li>
-              <li>По типу</li>
-              <li>По функционалу</li>
+              <li class="sort-by-type-item current">
+                <a href="">По цене</a>
+              </li>
+              <li class="sort-by-type-item">
+                <a href="">По типу</a>
+              </li>
+              <li class="sort-by-type-item">
+                <a href=""> По функционалу</a>
+              </li>
             </div>
+
             <div class="sorting-by-value-wrapper">
               <li class="sorting-increase"><span class="visually-hidden">По возрастанию</span></li>
               <li class="sorting-descrease"><span class="visually-hidden">По убыванию</span> </li>
@@ -392,7 +401,7 @@
                 alt="Логотип Техномарт"></a>
             <p>
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-              <a class="contacts-phone phone-footer" href="tel: +78125550555">+7 (812) 555-05-55</a>
+              <a class="contacts-phone phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
             </p>
           </div>
           <div class="footer-nav-list-wrapper">
@@ -460,11 +469,13 @@
   </footer>
 
   <!-- модальное окно с сообщением о добавлении в корзину-->
-  <section class="modal-add-to-cart">
-    <h2>Добавление товара в корзину</h2>
+  <section class="modal modal-add-to-cart">
+    <h2 class="visually-hidden">Добавление товара в корзину</h2>
     <p>Товар добавлен в корзину!</p>
-    <a class="button add-to-cart" href="#">Оформить заказ</a>
-    <a class="button continue-shopping" href="catalog.html">Продолжить покупки</a>
+    <div add-to-cart-btns-wrapper>
+      <a class="button add-to-cart" href="#">Оформить заказ</a>
+      <a class="button continue-shopping" href="catalog.html">Продолжить покупки</a>
+    </div>
   </section>
 
 </body>
