@@ -406,6 +406,7 @@ p.info-general {
 .user-login:active path {
   fill: var(--light-gray-border-hover);
 }
+
 /*
 .reg-button {
   width: 150px;
@@ -1516,6 +1517,7 @@ p.info-general {
 .user-account:active path {
   fill: var(--light-gray-border-hover);
 }
+
 /*
 .user-account::before {
   content: "";
@@ -1549,15 +1551,15 @@ p.info-general {
   position: relative;
 }
 
-.user-account-orders::after{
-    content: "";
-    width: 4px;
-    height: 4px;
-    background-color: var(--gray-dark);
-    border-radius: 50%;
-    position: absolute;
-    left: 90px;
-    top: 8px;
+.user-account-orders::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: var(--gray-dark);
+  border-radius: 50%;
+  position: absolute;
+  left: 90px;
+  top: 8px;
 }
 
 .user-account-orders:hover::after {
@@ -1613,9 +1615,11 @@ p.info-general {
   height: 12px;
   background-image: url("files/icon-right-small.svg");
 }
+
 .breadcrumbs-item-home::after {
   right: -35px;
 }
+
 .breadcrumbs-item:last-child {
   margin-right: 0;
 }
@@ -1737,6 +1741,7 @@ p.info-general {
   padding-top: 12px;
   position: relative;
 }
+
 /*
 .sorting-by-type-wrapper {
   display: flex;
@@ -1763,7 +1768,7 @@ p.info-general {
   margin-right: 20px;
 }
 
-.sort-by-type-item.current a{
+.sort-by-type-item.current a {
   color: var(--basic-red);
   border-bottom: none;
 }
@@ -1890,7 +1895,7 @@ p.info-general {
   user-select: none;
 }
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox+label::before {
   content: "";
   position: absolute;
   /* top: 15px; */
@@ -1903,7 +1908,7 @@ p.info-general {
   border-radius: 5px;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -1915,7 +1920,7 @@ p.info-general {
   top: -3px;
 }
 
-.filter-input-radio + label::before {
+.filter-input-radio+label::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -1927,7 +1932,7 @@ p.info-general {
   top: -5px;
 }
 
-.filter-input-radio:checked + label::after {
+.filter-input-radio:checked+label::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -2578,6 +2583,7 @@ p.info-general {
   border-radius: 5px;
   position: relative;
 }
+
 /*
 .min-price::after {
   content: "";
@@ -2588,4 +2594,3 @@ p.info-general {
   border-radius: 5px;
   left: 5px;
 } */
-
