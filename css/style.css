@@ -1180,11 +1180,12 @@ p.info-general {
 }
 
 .button-bookmark {
+  box-sizing: border-box;
   border: 3px solid var(--green);
   border-radius: 2px;
   color: var(--gray-dark);
-  padding: 11px 34px 9px 33px;
-  box-sizing: border-box;
+  padding: 9px 29px 9px 33px;
+
 }
 
 .button-bookmark:hover {
@@ -1599,6 +1600,10 @@ p.info-general {
   position: relative;
 }
 
+.breadcrumbs-item-home {
+  margin-right: 55px;
+}
+
 .breadcrumbs-item::after {
   content: "";
   position: absolute;
@@ -1608,7 +1613,9 @@ p.info-general {
   height: 12px;
   background-image: url("files/icon-right-small.svg");
 }
-
+.breadcrumbs-item-home::after {
+  right: -35px;
+}
 .breadcrumbs-item:last-child {
   margin-right: 0;
 }
@@ -1658,7 +1665,7 @@ p.info-general {
 
 .catalog-wrapper {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 219px 1fr;
   grid-template-rows: 38px 1fr;
   gap: 20px;
 }
@@ -1679,9 +1686,9 @@ p.info-general {
   font-weight: 400;
   text-transform: uppercase;
   background-color: var(--filter-background);
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 10px;
-  padding-left: 18px;
+  padding-left: 17px;
   margin-bottom: 14px;
   box-sizing: border-box;
 }
@@ -1707,7 +1714,7 @@ p.info-general {
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-left: 19px;
   /* padding-bottom: 10px; */
   /* background-color: var(--filter-background); */
@@ -1719,25 +1726,41 @@ p.info-general {
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   width: 460px;
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 12px;
+  position: relative;
 }
-
+/*
 .sorting-by-type-wrapper {
   display: flex;
   justify-content: space-between;
   width: 355px;
-}
+} */
+
 
 .sort-by-type-item a {
   border-bottom: 1px dotted var(--basic-red);
   color: var(--light-gray-border-hover);
+  margin-right: 70px;
+}
+
+.sort-by-type a {
+  margin-right: 65px;
+}
+
+.sort-by-function a {
+  margin-right: 46px;
+}
+
+.sorting-increase {
+  margin-right: 20px;
 }
 
 .sort-by-type-item.current a{
@@ -1755,13 +1778,18 @@ p.info-general {
   color: var(--basic-red);
 }
 
-.sorting-by-value-wrapper {
-  position: relative;
-  width: 71px;
-  display: flex;
-  justify-content: flex-start;
+.sorting-increase:hover path,
+.sorting-descrease:hover path {
+  fill: var(--black);
 }
 
+.sorting-increase:active path,
+.sorting-descrease:active path {
+  fill: var(--basic-red);
+}
+
+
+/*
 .sorting-increase::after {
   content: "";
   width: 0;
@@ -1770,7 +1798,7 @@ p.info-general {
 	border-color: transparent transparent var(--light-gray-border-hover) transparent;
   border-style: solid;
   position: absolute;
-  left: 6px;
+  left: 400px;
 }
 
 .sorting-descrease::after {
@@ -1781,7 +1809,7 @@ p.info-general {
 	border-color: var(--light-gray-border-hover) transparent transparent transparent;
 	border-style: solid;
   position: absolute;
-  left: 46px;
+  left: 440px;
 }
 
 .sorting-increase::after:hover {
@@ -1794,7 +1822,7 @@ p.info-general {
   position: absolute;
   left: 6px;
 }
-
+ */
 
 .product-list {
   list-style: none;
@@ -1821,7 +1849,11 @@ p.info-general {
 
 .filter fieldset:nth-child(2) {
   margin-top: 42px;
-  margin-bottom: 46px;
+  margin-bottom: 27px;
+}
+
+.filter fieldset:nth-child(3) {
+  margin-bottom: 17px;
 }
 
 .filter legend {
@@ -1830,6 +1862,7 @@ p.info-general {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+
 }
 
 .filter ul {
@@ -1913,7 +1946,7 @@ p.info-general {
   height: 1px;
   background-color: var(--light-gray-boder);
   position: absolute;
-  top: -16px;
+  top: -20px;
 }
 
 .filter-radio {
@@ -1980,6 +2013,9 @@ p.info-general {
   margin-right: 10px;
 }
 
+.pagination-item:last-child a {
+  padding: 10px 30px;
+}
 
 .pagination-item-current a {
   color: var(--white);
@@ -2386,29 +2422,66 @@ p.info-general {
   line-height: 18px;
   font-weight: 400;
   width: 620px;
-  top: 400px;
+  min-height: 282px;
+  top: 200px;
   bottom: auto;
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 4px 20px var(--brands-shadow);
+  /* display: flex; */
+  /* flex-direction: column; */
 }
+
 
 .modal-add-to-cart p {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  text-align: center;
+  margin-top: 73px;
+  margin-bottom: 67px;
+  position: relative;
+}
+
+.modal-add-to-cart p:before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  background-image: url("files/icon-mark.svg");
+  top: -15px;
+  left: 80px;
 }
 
 .add-to-cart {
   background-color: var(--basic-red);
   color: var(--white);
+  box-sizing: border-box;
+  padding: 11px 46px 9px 47px;
+  margin-top: 37px;
+  margin-left: 114px;
+  margin-right: 10px;
 }
 
-.add-to-cart-btns-wrapper {
-  background-color: var(--light-gray-modal);
+.cart-btns-wrapper a {
+  display: block;
 }
+
+.cart-btns-wrapper {
+  min-height: 113px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--light-gray-modal);
+  /* margin-top: 37px; */
+}
+
 
 .continue-shopping {
   color: var(--black);
+  box-sizing: border-box;
+  padding: 11px 31px 9px 32px;
+  background-color: var(--white);
+  margin-top: 37px;
 }
 
 
@@ -2491,16 +2564,28 @@ p.info-general {
 }
 
 .price-controls input {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
   width: 95px;
   text-align: center;
-  padding: 10px;
+  padding: 9px;
+  padding-left: 18px;
   box-sizing: border-box;
   background-color: var(--filter-background);
   border: none;
   border-radius: 5px;
+  position: relative;
 }
+/*
+.min-price::after {
+  content: "";
+  width: 18px;
+  height: 1px;
+  background-color: var(--black);
+  position: absolute;
+  border-radius: 5px;
+  left: 5px;
+} */
 

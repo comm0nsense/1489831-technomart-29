@@ -48,9 +48,11 @@
 
                 <span>Равшан Джамшутович</span>
                 <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
-                  <path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z" fill="#C5C5C5"/>
-                  </svg>
+                  <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5" />
+                  <path
+                    d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z"
+                    fill="#C5C5C5" />
+                </svg>
 
 
               </a>
@@ -118,10 +120,10 @@
                     "></div>
                   </div>
                   <div class="toggle toggle-min" tabindex="0" style="
-                  left: 20%;
+                  left: 7%;
                   "></div>
                   <div class="toggle toggle-max" tabindex="0" style="
-                  left: 45%;
+                  left: 72%;
                   "></div>
                 </div>
                 <div class="price-controls">
@@ -136,7 +138,7 @@
             </fieldset>
 
             <fieldset>
-              <legend class="brands-legend">Прозводители:</legend>
+              <legend class="brands-legend">Производители:</legend>
               <ul>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
@@ -168,7 +170,7 @@
                 <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio" type="radio" name="type-of-power-supply"
                     value="battery-powered" id="filter-battery-powered" checked>
-                  <label for="filter-battery-powered">Аккумулятроные</label>
+                  <label for="filter-battery-powered">Аккумуляторные</label>
                 </li>
                 <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio" type="radio" name="type-of-power-supply"
@@ -187,22 +189,26 @@
         <div class="sorting">
           <h2>Сортировка:</h2>
           <ul class="sorting-options">
-            <div class="sorting-by-type-wrapper">
-              <li class="sort-by-type-item current">
-                <a href="">По цене</a>
-              </li>
-              <li class="sort-by-type-item">
-                <a href="">По типу</a>
-              </li>
-              <li class="sort-by-type-item">
-                <a href=""> По функционалу</a>
-              </li>
-            </div>
+            <li class="sort-by-type-item sort-by-price current">
+              <a href="">По цене</a>
+            </li>
+            <li class="sort-by-type-item sort-by-type">
+              <a href="">По типу</a>
+            </li>
+            <li class="sort-by-type-item sort-by-function">
+              <a href=""> По функционалу</a>
+            </li>
 
-            <div class="sorting-by-value-wrapper">
-              <li class="sorting-increase"><span class="visually-hidden">По возрастанию</span></li>
-              <li class="sorting-descrease"><span class="visually-hidden">По убыванию</span> </li>
-            </div>
+            <li class="sorting-increase">
+              <span class="visually-hidden">По возрастанию</span>
+              <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.66 0l5.5 10h-11" fill="#C5C5C5" /></svg>
+            </li>
+            <li class="sorting-descrease">
+              <span class="visually-hidden">По убыванию</span>
+              <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.66 10L.16 0h11" fill="#C5C5C5" /></svg>
+            </li>
           </ul>
 
         </div>
@@ -413,7 +419,7 @@
       <div class="container">
         <div class="footer-navigation-wrapper">
           <div class="footer-contacts-wrapper">
-            <a class="footer-logo" href="index.html"><img src="img/logo-technomart.svg" width="108" height="18"
+            <a class="footer-logo" href="index.html"><img src="img/logo-technomart.svg" width="137" height="22"
                 alt="Логотип Техномарт"></a>
             <p>
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
@@ -442,43 +448,48 @@
     <div class="footer-social">
       <div class="container">
         <div class="footer-social-wrapper">
-          <p>
+          <p class="footer-copyright">
             © 2010–2019 Компания «Техномарт»<br>
             Все права защищены
           </p>
           <ul class="social-list">
             <li class="social-list-item">
-              <a class="social-button" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-                <svg width="26" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="social-button" href="#" aria-label="Вконтакте">
+                <!-- <span class="visually-hidden">Вконтакте</span> -->
+                <svg aria-hidden="true" focusable="true" width="26" height="15" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15.54 11.73c.92-.3 2.1 1.91 3.35 2.75.95.64 1.67.5 1.67.5l3.34-.04s1.75-.1.92-1.46c-.07-.11-.48-1-2.49-2.83-2.1-1.92-1.8-1.6.72-4.92C24.58 3.71 25.2 2.48 25 1.95c-.19-.5-1.32-.37-1.32-.37l-3.77.03c-.36 0-.67.1-.82.48 0 0-.6 1.56-1.39 2.89-1.67 2.8-2.34 2.95-2.62 2.77-.64-.4-.48-1.63-.48-2.5 0-2.71.42-3.84-.81-4.14-.41-.1-.71-.16-1.76-.17-1.34-.02-2.48 0-3.12.31-.43.21-.76.67-.56.7.25.03.8.14 1.11.54.39.52.37 1.68.37 1.68s.22 3.2-.52 3.6c-.5.27-1.2-.29-2.7-2.83-.76-1.3-1.34-2.74-1.34-2.74s-.1-.27-.3-.42c-.25-.17-.59-.22-.59-.22l-3.57.02s-.54.01-.74.24c-.17.2-.01.63-.01.63s2.8 6.45 5.97 9.7c2.9 2.98 6.21 2.79 6.21 2.79h1.5s.45-.05.68-.3c.22-.22.21-.64.21-.64s-.03-1.98.9-2.27z"
                     fill="#fff" /></svg>
               </a>
             </li>
-            <li class="social-button"><a href="#">
-                <span class="visually-hidden">Фейсбук</span>
-                <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li class="social-list-item"><a href="#">
+                <!-- <span class="visually-hidden">Фейсбук</span> -->
+                <svg role="img" aria-label="Логотип Фейсбук" width="12" height="22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff" /></svg>
               </a>
             </li>
-            <li class="social-button"><a href="#">
+            <li class="social-list-item"><a href="#">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" focusable="true" width="21" height="21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z"
                     fill="#fff" /></svg>
               </a>
             </li>
           </ul>
-          <p>
-            Обратная связь:<br>
-            <a class="footer-contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <p>
-            Разработано - <br>
-            <a class="footer-contacts" href="https://htmlacademy.ru">htmlacademy.ru</a>
-          </p>
+          <div class="footer-econtacts-wrapper">
+            <p>
+              Обратная связь:<br>
+              <a class="footer-contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p>
+              Разработано - <br>
+              <a class="footer-contacts" href="https://htmlacademy.ru">htmlacademy.ru</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -488,10 +499,15 @@
   <section class="modal modal-add-to-cart">
     <h2 class="visually-hidden">Добавление товара в корзину</h2>
     <p>Товар добавлен в корзину!</p>
-    <div add-to-cart-btns-wrapper>
+
+    <div class="cart-btns-wrapper">
       <a class="button add-to-cart" href="#">Оформить заказ</a>
       <a class="button continue-shopping" href="catalog.html">Продолжить покупки</a>
     </div>
+    <button class="modal-close modal-close-write-us" type="button" aria-label="Закрыть"></button>
+    <!-- <button class="modal-close-write-us" type="button" aria-label="Закрыть"></button> -->
+
+
   </section>
 
 </body>
