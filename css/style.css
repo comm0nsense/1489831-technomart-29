@@ -35,6 +35,7 @@
   --green-shadow: #367315;
   --order-button-hover: #5FBB2D;
   --order-button-active: #518534;
+  --basic-green: #00ca74;
   --bookmark-active: rgba(50, 66, 92, 0.5);
   --brands-border: #EAEAEA;
 
@@ -65,6 +66,8 @@
   --filter-background: #F7F3EC;
 
   --light-gray-modal: #F1F1F1;
+
+  --gray-shadow: #ABABAB;
 
 }
 
@@ -1900,12 +1903,12 @@ p.info-general {
   position: absolute;
   /* top: 15px; */
   left: -35px;
-  top: -5px;
+  top: -3px;
   width: 23px;
   height: 23px;
   box-sizing: border-box;
   border: 2px solid var(--light-gray-border-hover);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .filter-input-checkbox:checked+label::after {
@@ -2427,13 +2430,12 @@ p.info-general {
   line-height: 18px;
   font-weight: 400;
   width: 620px;
-  min-height: 282px;
+  min-height: 283px;
   top: 200px;
   bottom: auto;
   border-top: 7px solid var(--basic-red);
   box-shadow: 0px 4px 20px var(--brands-shadow);
-  /* display: flex; */
-  /* flex-direction: column; */
+  box-sizing: border-box;
 }
 
 
@@ -2442,7 +2444,7 @@ p.info-general {
   line-height: 30px;
   font-weight: 700;
   text-align: center;
-  margin-top: 73px;
+  margin-top: 70px;
   margin-bottom: 67px;
   position: relative;
 }
@@ -2453,7 +2455,7 @@ p.info-general {
   width: 66px;
   height: 66px;
   background-image: url("files/icon-mark.svg");
-  top: -15px;
+  top: -18px;
   left: 80px;
 }
 
@@ -2529,9 +2531,10 @@ p.info-general {
 
 
 .range-controls .bar {
-  width: 152px;
+  /* width: 152px; */
+  width: 70%;
   height: 2px;
-  background-color: #00ca74;
+  background-color: var(--basic-green);
 }
 
 .range-controls .toggle {
@@ -2539,13 +2542,14 @@ p.info-general {
   height: 4px;
   padding: 0;
   border: 8px solid var(--white);
-  background-color: #ABABAB;
+  background-color: var(--gray-shadow);
   /* mix-blend-mode: normal; */
   /* opacity: 0.3; */
   border-radius: 50%;
   position: absolute;
   top: 30px;
   cursor: pointer;
+  box-shadow: 0 3px 0 1px var(--gray-shadow);
 }
 
 .range-controls .toggle-min {
@@ -2576,7 +2580,7 @@ p.info-general {
   width: 95px;
   text-align: center;
   padding: 9px;
-  padding-left: 18px;
+  padding-left: 20px;
   box-sizing: border-box;
   background-color: var(--filter-background);
   border: none;
@@ -2584,13 +2588,6 @@ p.info-general {
   position: relative;
 }
 
-/*
-.min-price::after {
-  content: "";
-  width: 18px;
-  height: 1px;
-  background-color: var(--black);
-  position: absolute;
-  border-radius: 5px;
-  left: 5px;
-} */
+.min-price input {
+  margin-right: 5px;
+}
