@@ -68,6 +68,8 @@
   --light-gray-modal: #F1F1F1;
 
   --gray-shadow: #ABABAB;
+  --gray-range-controls-scale: #D7DCDE;
+  --gray-range-controls-shadaw: rgba(171,171,171, 0.3);
 
 }
 
@@ -2524,7 +2526,7 @@ p.info-general {
 
 .range-controls .scale {
   height: 2px;
-  background: #D7DCDE;
+  background: var(--gray-range-controls-scale);
 }
 
 
@@ -2547,7 +2549,7 @@ p.info-general {
   position: absolute;
   top: 30px;
   cursor: pointer;
-  box-shadow: 0 3px 0 1px var(--gray-shadow);
+  box-shadow: 0px 1.5px 0 1px var(--gray-range-controls-shadaw);
 }
 
 .range-controls .toggle-min {
