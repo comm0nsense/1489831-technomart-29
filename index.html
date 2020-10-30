@@ -327,10 +327,10 @@
             Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
-          <div class="contacts-image-wrapper">
+          <a class="contacts-map" href="#">
             <img src="img/map.jpg" width="300" height="158" alt="Карта">
-          </div>
-          <button class="button contacts-button" type="button">Заблудились? Напишите нам!</button>
+          </a>
+          <a class="button contacts-button" href="blank.html">Заблудились? Напишите нам!</a>
         </div>
       </section>
     </div>
@@ -342,7 +342,7 @@
         <div class="footer-navigation-wrapper">
           <div class="footer-contacts-wrapper">
             <a class="footer-logo">
-              <img class="footer-logo-img" src="img/logo-technomart.svg" width="137" height="22"
+              <img class="footer-logo-img" src="img/logo-technomart.svg" width="138" height="23"
                 alt="Логотип Техномарт">
             </a>
             <p>
@@ -439,12 +439,12 @@
         <div class="feedback-user-details">
           <div class="username-wrapper">
             <label for="name">Ваше имя:</label>
-            <input type="text" name="username" id="name" placeholder="Имя Фамилия">
+            <input class="username" type="text" name="username" id="name" placeholder="Имя Фамилия">
           </div>
 
           <div class="user-email-wrapper">
             <label for="email">Ваш e-mail:</label>
-            <input type="email" name="email" id="email" placeholder="email@example@.com">
+            <input class="user-email" type="email" name="email" id="email" placeholder="email@example@.com">
           </div>
         </div>
 
@@ -461,10 +461,14 @@
 
     </form>
 
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    <!-- <button class="modal-close-write-us" type="button" aria-label="Закрыть"></button> -->
+    <!-- <button class="modal-close" type="button" aria-label="Закрыть"></button> -->
+    <button class="modal-close modal-close-write-us" type="button" aria-label="Закрыть"></button>
 
   </section>
+
+<script src="js/map.js"></script>
+<script src="js/write-us.js"></script>
+
 
 </body>
 
