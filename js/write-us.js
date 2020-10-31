@@ -24,17 +24,15 @@ writeUsLink.addEventListener("click", function (evt) {
     writeUsName.value = storage;
     writeUsEmail.focus();
   } else {
-  writeUsName.focus();
-}
+    writeUsName.focus();
+  }
 });
-
 
 
 writeUsClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   writeUsPopup.classList.remove("modal-show");
   writeUsPopup.classList.remove("modal-error");
-
 });
 
 
@@ -50,7 +48,6 @@ writeUsForm.addEventListener("submit", function (evt) {
     }
   }
 });
-
 
 
 window.addEventListener("keydown", function (evt) {
