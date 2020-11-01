@@ -956,7 +956,7 @@ p.info-general {
 }
 
 .slider-navigation .current {
-  background-color: #EE3643;
+  background-color: var(--basic-red);
 }
 
 /* Bestsellers, Brands - General */

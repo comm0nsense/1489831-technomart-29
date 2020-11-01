@@ -40,8 +40,9 @@ writeUsForm.addEventListener("submit", function (evt) {
   if (!writeUsName.value || !writeUsEmail.value) {
     evt.preventDefault();
     writeUsPopup.classList.add("modal-error");
-    writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
-    writeUsPopup.classList.add("modal-error");
+    setTimeout(function (){
+      writeUsPopup.classList.remove("modal-error");
+    }, 2000);
   } else {
     if (isStorageSupport) {
       localStorage.setItem("username", writeUsName.value);
