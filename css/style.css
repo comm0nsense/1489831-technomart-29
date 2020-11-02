@@ -176,7 +176,7 @@ img {
   content: "";
   width: 70px;
   height: 70px;
-  background-image: url("files/label-new.svg");
+  background-image: url("../img/files/label-new.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -411,7 +411,7 @@ p.info-general {
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 42px;
-  background-image: url("files/icon-search.svg");
+  background-image: url("../img/files/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 17px 9px;
   opacity: 0.3;
@@ -423,7 +423,7 @@ p.info-general {
 }
 
 .header-search:focus {
-  background-image: url("files/icon-search-red.svg");
+  background-image: url("../img/files/icon-search-red.svg");
 }
 
 .site-navigation {
@@ -476,7 +476,7 @@ p.info-general {
   content: "";
   width: 14px;
   height: 16px;
-  background-image: url("files/icon-bookmark.svg");
+  background-image: url("../img/files/icon-bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -522,7 +522,7 @@ p.info-general {
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url("files/icon-cart.svg");
+  background-image: url("../img/files/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -596,7 +596,7 @@ p.info-general {
   content: "";
   width: 19px;
   height: 19px;
-  background-image: url("files/icon-phone.svg");
+  background-image: url("../img/files/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -679,7 +679,7 @@ p.info-general {
   content: "";
   width: 44px;
   height: 65px;
-  background-image: url("files/icon-materials.svg");
+  background-image: url("../img/files/icon-materials.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -691,7 +691,7 @@ p.info-general {
   content: "";
   width: 70px;
   height: 70px;
-  background-image: url("files/label-new.svg");
+  background-image: url("../img/files/label-new.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -711,7 +711,7 @@ p.info-general {
   content: "";
   width: 75px;
   height: 61px;
-  background-image: url("files/icon-instruments.svg");
+  background-image: url("../img/files/icon-instruments.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -731,7 +731,7 @@ p.info-general {
   content: "";
   width: 78px;
   height: 62px;
-  background-image: url("files/icon-technics.svg");
+  background-image: url("../img/files/icon-technics.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -751,7 +751,7 @@ p.info-general {
   content: "";
   width: 59px;
   height: 72px;
-  background-image: url("files/icon-discounts.svg");
+  background-image: url("../img/files/icon-discounts.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -771,7 +771,7 @@ p.info-general {
   content: "";
   width: 78px;
   height: 63px;
-  background-image: url("files/icon-delivery.svg");
+  background-image: url("../img/files/icon-delivery.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   position: absolute;
@@ -845,7 +845,7 @@ p.info-general {
 }
 
 .slider-image::before {
-  content: url("files/icon-left.svg");
+  content: url("../img/files/icon-left.svg");
   z-index: 100;
   position: absolute;
   top: 50px;
@@ -933,11 +933,11 @@ p.info-general {
 }
 
 .left-button::after {
-  content: url("files/icon-left.svg");
+  content: url("../img/files/icon-left.svg");
 }
 
 .right-button::after {
-  content: url("files/icon-right.svg");
+  content: url("../img/files/icon-right.svg");
 }
 
 .slider-navigation {
@@ -1099,7 +1099,7 @@ p.info-general {
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url("files/icon-cart.svg");
+  background-image: url("../img/files/icon-cart.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: 8px;
@@ -1231,7 +1231,7 @@ p.info-general {
 }
 
 .service-list::after {
-  content: url("files/services-background.png");
+  content: url("../img/files/services-background.png");
   position: absolute;
   top: 0px;
   left: 230px;
@@ -1272,7 +1272,7 @@ p.info-general {
   position: absolute;
   top: 20px;
   left: 150px;
-  background-image: url("files/services-delivery.svg");
+  background-image: url("../img/files/services-delivery.svg");
 }
 
 .guarantee-slide.active::after {
@@ -1282,7 +1282,7 @@ p.info-general {
   position: absolute;
   top: -14px;
   left: 260px;
-  background-image: url("files/services-guarantee.svg");
+  background-image: url("../img/files/services-guarantee.svg");
 }
 
 .credit-slide.active::after {
@@ -1292,7 +1292,7 @@ p.info-general {
   position: absolute;
   top: -29px;
   left: 150px;
-  background-image: url("files/services-credit.svg");
+  background-image: url("../img/files/services-credit.svg");
 }
 
 .guarantee-slide p {
@@ -1528,7 +1528,7 @@ p.info-general {
   right: -25px;
   width: 8px;
   height: 12px;
-  background-image: url("files/icon-right-small.svg");
+  background-image: url("../img/files/icon-right-small.svg");
 }
 
 .breadcrumbs-item-home::after {
@@ -1549,7 +1549,7 @@ p.info-general {
   position: absolute;
   width: 14px;
   height: 12px;
-  background-image: url("files/icon-home.svg");
+  background-image: url("../img/files/icon-home.svg");
   top: 4px;
 }
 
@@ -1775,7 +1775,7 @@ p.info-general {
   position: absolute;
   width: 22px;
   height: 17px;
-  background-image: url("files/checkbox.svg");
+  background-image: url("../img/files/checkbox.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -31px;
@@ -1840,7 +1840,7 @@ p.info-general {
 }
 
 .filter-button {
-  display: inline-block;
+  display: block;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -2279,7 +2279,7 @@ p.info-general {
   position: absolute;
   width: 66px;
   height: 66px;
-  background-image: url("files/icon-mark.svg");
+  background-image: url("../img/files/icon-mark.svg");
   top: -18px;
   left: 80px;
 }
