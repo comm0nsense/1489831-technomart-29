@@ -466,8 +466,6 @@ p.info-general {
 
 .header-bookmark.item-added {
   background-color: var(--basic-red);
-  flex-grow: 0; /* do not grow   - initial value: 0 */
-  flex-shrink: 0; /* do not shrink - initial value: 1 */
 }
 
 .header-bookmark span {
@@ -512,8 +510,8 @@ p.info-general {
 
 .button-cart.item-added {
   background-color: var(--basic-red);
-  flex-grow: 0;
-  flex-shrink: 0;
+  padding: 9px 23px 9px 36px;
+  position: relative;
 }
 
 .button-cart span {
@@ -548,8 +546,6 @@ p.info-general {
   line-height: 24px;
   font-weight: 400;
   padding: 9px 16px 9px 19px;
-  flex-grow: 0;
-  flex-shrink: 0;
 }
 
 .user-login:hover,
