@@ -1022,6 +1022,8 @@ p.info-general {
   min-height: 180px;
   display: flex;
   align-items: center;
+  margin-top: -6px;
+  margin-left: -8px;
 }
 
 .product-price-wrapper {
@@ -1039,6 +1041,7 @@ p.info-general {
   width: 185px;
   text-align: center;
   margin-bottom: 7px;
+  margin-top: 6px;
 }
 
 .product-price {
@@ -1087,7 +1090,7 @@ p.info-general {
   height: 38px;
   margin: 38px 44px 10px 41px;
   padding-top: 10px;
-  padding-left: 50px;
+  padding-left: 54px;
   box-sizing: border-box;
   position: relative;
 }
@@ -1116,7 +1119,10 @@ p.info-general {
   border: 3px solid var(--green);
   border-radius: 2px;
   color: var(--gray-dark);
-  padding: 9px 29px 9px 33px;
+  width: 135px;
+  height: 38px;
+  padding-top: 7px;
+  padding-left: 29px;
 }
 
 .button-bookmark:hover {
