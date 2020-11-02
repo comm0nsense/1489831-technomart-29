@@ -1537,6 +1537,7 @@ p.info-general {
 
 .breadcrumbs-item:last-child {
   margin-right: 0;
+  margin-left: 1px;
 }
 
 .breadcrumbs-item-current::after {
