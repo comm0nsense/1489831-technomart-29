@@ -1725,15 +1725,21 @@ background-position: 55px 12px;
 }
 
 .filter fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* border: none; */
   position: relative;
 }
 
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .filter fieldset:nth-child(2) {
-  margin-top: 42px;
-  margin-bottom: 27px;
+  /* margin-top: 42px; */
+  /* margin-bottom: 27px; */
 }
 
 .filter fieldset:nth-child(3) {
@@ -1764,6 +1770,10 @@ background-position: 55px 12px;
 
 .filter-checkbox:first-child {
   margin-top: 17.5px;
+}
+
+.filter-checkbox:last-child {
+  margin-bottom: 25px;
 }
 
 .filter-option label {
@@ -1821,7 +1831,7 @@ background-position: 55px 12px;
   box-sizing: border-box;
 }
 
-
+/*
 .brands-legend::before {
   content: "";
   width: 220px;
@@ -1829,6 +1839,24 @@ background-position: 55px 12px;
   background-color: var(--light-gray-boder);
   position: absolute;
   top: -16px;
+}
+ */
+
+.filter-supply {
+  margin-top: 19px;
+}
+.filter-brand {
+  margin-top: 17px;
+}
+.filter-price::after,
+.filter-brand::after {
+  display: block;
+  content: "";
+  width: 220px;
+  height: 1px;
+  background-color: var(--light-gray-boder);
+  /* position: absolute; */
+  /* top: 25px; */
 }
 
 .filter-radio {
@@ -1839,6 +1867,7 @@ background-position: 55px 12px;
   margin-top: 23px;
 }
 
+/*
 .power-type-legend::before {
   content: "";
   width: 220px;
@@ -1847,6 +1876,7 @@ background-position: 55px 12px;
   position: absolute;
   top: -18px;
 }
+ */
 
 .filter-option label {
   font-size: 15px;
@@ -2390,6 +2420,7 @@ background-position: 55px 12px;
 .price-controls {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 26px;
 }
 
 .price-controls label {
