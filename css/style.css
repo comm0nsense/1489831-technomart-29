@@ -197,6 +197,10 @@ img {
   left: 0;
 }
 
+.product-buttons-wrapper a:last-child {
+  margin-left: -3px;
+}
+
 .bestseller-product:hover .product-image,
 .catalog-product:hover .product-image {
   display: none;
@@ -279,24 +283,24 @@ p.info-general {
 /* logo-technomart */
 .header-logo {
   width: 220px;
-  height: 47px;
-  position: absolute;
-  background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px var(--logo-shadow);
+  height: 42px;
 }
 
-.header-logo-img {
-  padding: 12px 56px 17px 56px;
+.header-logo::before {
+content: "";
+position: absolute;
+width: 220px;
+height: 47px;
+background-color: var(--basic-red);
+box-shadow: inset 0px -5px 0px var(--logo-shadow);
+background-image: url("../img/logo-technomart.svg");
+background-repeat: no-repeat;
+background-position: 55px 12px;
 }
 
-.header-logo:active {
+.header-logo:active::before {
   background-color: var(--slider-button-active);
 }
-
-.technomart-logo:active {
-  background-color: var(--slider-button-active);
-}
-
 
 /* Basic Button */
 .button {
@@ -403,28 +407,50 @@ p.info-general {
   justify-content: flex-end;
   align-self: center;
 }
-
+.header-search-wrapper {
+  position: relative;
+}
 .header-search {
   width: 270px;
+  height: 42px;
   background-color: var(--gray-dark-extra);
-  border-color: var(--gray-dark-extra);
-  padding-top: 9px;
+  padding-top: 10px;
   padding-bottom: 9px;
-  padding-left: 42px;
-  background-image: url("../img/files/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 17px 9px;
-  opacity: 0.3;
-  margin-left: 219px;
+  padding-left: 41px;
+  opacity: 1;
+  outline: none;
+  border: none;
 }
 
-.header-search:hover {
+.header-search-icon {
+  position: absolute;
+  opacity: 0.3;
+  width: 17px;
+  height: 17px;
+  top: 11px;
+  left: 16px;
+}
+
+.header-search::placeholder {
+  color: var(--white);
+}
+
+.header-search-wrapper:hover .header-search-icon {
   opacity: 1;
 }
 
 .header-search:focus {
-  background-image: url("../img/files/icon-search-red.svg");
+  background-color: var(--white);
 }
+
+.header-search:focus::placeholder {
+  color: var(--black);
+}
+
+.header-search:focus + .header-search-icon path {
+  fill: var(--basic-red);
+}
+
 
 .site-navigation {
   list-style: none;
@@ -621,19 +647,6 @@ p.info-general {
 .button-order:active {
   background-color: var(--green);
   color: var(--brands-background-active);
-}
-
-.header-search::placeholder {
-  color: var(--white);
-}
-
-.header-search:focus {
-  background-color: var(--white);
-  outline: none;
-}
-
-.header-search:focus::placeholder {
-  color: var(--black);
 }
 
 /* Main Categories */
@@ -1089,8 +1102,8 @@ p.info-general {
   width: 135px;
   height: 38px;
   margin: 38px 44px 10px 41px;
-  padding-top: 10px;
-  padding-left: 54px;
+  padding-top: 9px;
+  padding-left: 53px;
   box-sizing: border-box;
   position: relative;
 }
@@ -1455,13 +1468,16 @@ p.info-general {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  color: var(--gray-dark);
   list-style: none;
   display: flex;
   padding: 0;
   margin: 0;
   justify-content: flex-start;
   margin-left: 95px;
+}
+
+.user-account-nav a {
+  color: var(--gray-dark);
 }
 
 .user-account-orders {
@@ -1488,13 +1504,13 @@ p.info-general {
   background-color: var(--light-gray-border-hover);
 }
 
-.user-account-orders:hover,
-.user-account-area:hover {
+.user-account-orders a:hover,
+.user-account-area a:hover {
   color: var(--basic-red);
 }
 
-.user-account-orders:active,
-.user-account-area:active {
+.user-account-orders a:active,
+.user-account-area a:active {
   color: var(--light-gray-border-hover);
 }
 
@@ -1504,7 +1520,7 @@ p.info-general {
   font-size: 13px;
   padding: 0;
   margin-top: 21px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -1518,7 +1534,8 @@ p.info-general {
 }
 
 .breadcrumbs-item-home {
-  margin-right: 55px;
+  margin-right: 41px;
+  margin-top: 2px;
 }
 
 .breadcrumbs-item::after {
@@ -1532,7 +1549,8 @@ p.info-general {
 }
 
 .breadcrumbs-item-home::after {
-  right: -35px;
+  right: -23px;
+  top: 2px;
 }
 
 .breadcrumbs-item:last-child {
@@ -1542,15 +1560,6 @@ p.info-general {
 
 .breadcrumbs-item-current::after {
   display: none;
-}
-
-.breadcrumbs-item-home::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 12px;
-  background-image: url("../img/files/icon-home.svg");
-  top: 4px;
 }
 
 .breadcrumbs a {
@@ -1583,7 +1592,7 @@ p.info-general {
 /* Фильтры и Сортировка */
 .catalog-wrapper {
   display: grid;
-  grid-template-columns: 219px 1fr;
+  grid-template-columns: 220px 1fr;
   grid-template-rows: 38px 1fr;
   gap: 20px;
 }
@@ -1631,8 +1640,8 @@ p.info-general {
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-top: 11px;
-  padding-left: 21px;
+  padding-top: 10px;
+  padding-left: 20px;
   box-sizing: border-box;
 }
 
@@ -1656,19 +1665,25 @@ p.info-general {
 .sort-by-type-item a {
   border-bottom: 1px dotted var(--basic-red);
   color: var(--light-gray-border-hover);
-  margin-right: 72px;
+  margin-right: 71px;
 }
 
+
 .sort-by-type a {
-  margin-right: 65px;
+  margin-right: 66px;
 }
 
 .sort-by-function a {
   margin-right: 46px;
 }
 
+
 .sorting-increase {
   margin-right: 20px;
+}
+
+.sorting-active path {
+  fill: var(--basic-red);
 }
 
 .sort-by-type-item.current a {
@@ -1761,24 +1776,24 @@ p.info-general {
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
-  left: -35px;
+  left: -35 px;
   top: -3px;
   width: 23px;
   height: 23px;
-  box-sizing: border-box;
-  border: 2px solid var(--light-gray-border-hover);
-  border-radius: 3px;
+  /* background-image: url("../img/files/checkbox-off.svg"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: 0 0; */
 }
 
 .filter-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
-  width: 22px;
-  height: 17px;
-  background-image: url("../img/files/checkbox.svg");
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/files/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  left: -31px;
+  left: -35px;
   top: -3px;
 }
 
