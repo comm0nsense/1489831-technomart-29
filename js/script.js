@@ -5,6 +5,11 @@ const writeUsForm = writeUsPopup.querySelector(".user-feedback-form");
 const writeUsName = writeUsPopup.querySelector(".username");
 const writeUsEmail = writeUsPopup.querySelector(".user-email");
 
+const mapLink = document.querySelector(".contacts-map");
+const mapPopup = document.querySelector(".modal-map");
+const mapClose = mapPopup.querySelector(".modal-close");
+
+
 let isStorageSupport = true;
 let storage = "";
 
@@ -58,4 +63,23 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
+});
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    }
+  }
+});
 
