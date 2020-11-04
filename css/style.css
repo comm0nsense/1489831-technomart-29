@@ -2003,6 +2003,9 @@ p.info-general {
   border: 1px solid var(--basic-red);
 }
 
+.pagination-item-current a:hover {
+  border: none;
+}
 /* Catalog product-type-description */
 .product-type-description {
   background-color: var(--catalog-light-gray);
@@ -2548,7 +2551,6 @@ p.info-general {
 }
 
 @keyframes shake {
-
   0%,
   100% {
     transform: translateX(0);

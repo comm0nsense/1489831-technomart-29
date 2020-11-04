@@ -41,9 +41,6 @@ writeUsForm.addEventListener("submit", function (evt) {
     writeUsPopup.classList.remove("modal-error");
     writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
     writeUsPopup.classList.add("modal-error");
-    // setTimeout(function (){
-      // writeUsPopup.classList.remove("modal-error");
-    // }, 2000);
   } else {
     if (isStorageSupport) {
       localStorage.setItem("username", writeUsName.value);
@@ -57,7 +54,6 @@ window.addEventListener("keydown", function (evt) {
     if (writeUsPopup.classList.contains("modal-show")) {
       evt.preventDefault();
       writeUsPopup.classList.remove("modal-show");
-      // writeUsPopup.classList.remove("modal-error");
     }
   }
 });
