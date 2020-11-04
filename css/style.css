@@ -287,15 +287,15 @@ p.info-general {
 }
 
 .header-logo::before {
-content: "";
-position: absolute;
-width: 220px;
-height: 47px;
-background-color: var(--basic-red);
-box-shadow: inset 0px -5px 0px var(--logo-shadow);
-background-image: url("../img/logo-technomart.svg");
-background-repeat: no-repeat;
-background-position: 55px 12px;
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 47px;
+  background-color: var(--basic-red);
+  box-shadow: inset 0px -5px 0px var(--logo-shadow);
+  background-image: url("../img/logo-technomart.svg");
+  background-repeat: no-repeat;
+  background-position: 55px 12px;
 }
 
 .header-logo:active::before {
@@ -407,9 +407,11 @@ background-position: 55px 12px;
   justify-content: flex-end;
   align-self: center;
 }
+
 .header-search-wrapper {
   position: relative;
 }
+
 .header-search {
   width: 270px;
   height: 42px;
@@ -447,7 +449,7 @@ background-position: 55px 12px;
   color: var(--black);
 }
 
-.header-search:focus + .header-search-icon path {
+.header-search:focus+.header-search-icon path {
   fill: var(--basic-red);
 }
 
@@ -1457,7 +1459,6 @@ background-position: 55px 12px;
   color: var(--light-gray-border-hover);
 }
 
-
 .user-account:active path,
 .user-logout:active path {
   fill: var(--light-gray-border-hover);
@@ -1668,7 +1669,6 @@ background-position: 55px 12px;
   margin-right: 71px;
 }
 
-
 .sort-by-type a {
   margin-right: 66px;
 }
@@ -1676,7 +1676,6 @@ background-position: 55px 12px;
 .sort-by-function a {
   margin-right: 46px;
 }
-
 
 .sorting-increase {
   margin-right: 20px;
@@ -1725,9 +1724,6 @@ background-position: 55px 12px;
 }
 
 .filter fieldset {
-  /* margin: 0; */
-  /* padding: 0; */
-  /* border: none; */
   position: relative;
 }
 
@@ -1735,11 +1731,6 @@ background-position: 55px 12px;
   margin: 0;
   padding: 0;
   border: none;
-}
-
-.filter fieldset:nth-child(2) {
-  /* margin-top: 42px; */
-  /* margin-bottom: 27px; */
 }
 
 .filter fieldset:nth-child(3) {
@@ -1761,7 +1752,7 @@ background-position: 55px 12px;
 }
 
 .filter-option {
-  padding-left: 35px;
+  /* padding-left: 35px; */
 }
 
 .filter-checkbox {
@@ -1781,30 +1772,64 @@ background-position: 55px 12px;
   display: block;
   cursor: pointer;
   user-select: none;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  padding-left: 35px;
 }
 
-.filter-input-checkbox+label::before {
+.filter-input-checkbox + label::before {
   content: "";
-  position: absolute;
-  left: -35 px;
-  top: -3px;
-  width: 23px;
-  height: 23px;
-  /* background-image: url("../img/files/checkbox-off.svg"); */
-  /* background-repeat: no-repeat; */
-  /* background-position: 0 0; */
-}
-
-.filter-input-checkbox:checked+label::after {
-  content: "";
+  /* content: url("../img/files/checkbox-off.svg"); */
   position: absolute;
   width: 23px;
   height: 23px;
-  background-image: url("../img/files/checkbox-on.svg");
+  background-image: url("../img/files/checkbox-off.svg");
+  cursor: pointer;
   background-repeat: no-repeat;
   background-position: 0 0;
-  left: -35px;
-  top: -3px;
+  left: 0px;
+  top: -5px;
+}
+
+.filter-input-checkbox:checked + label:before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/files/checkbox-on.svg");
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
+  top: -5px;
+}
+
+.filter-input-checkbox:hover + label::before {
+  content: "";
+  /* content: url("../img/files/checkbox-off.svg"); */
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/files/checkbox-off-hover.svg");
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
+  top: -5px;
+}
+
+.filter-input-checkbox:checked:hover + label:before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/files/checkbox-on-hover.svg");
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
+  top: -5px;
 }
 
 .filter-input-radio+label::before {
@@ -1831,23 +1856,14 @@ background-position: 55px 12px;
   box-sizing: border-box;
 }
 
-/*
-.brands-legend::before {
-  content: "";
-  width: 220px;
-  height: 1px;
-  background-color: var(--light-gray-boder);
-  position: absolute;
-  top: -16px;
-}
- */
-
 .filter-supply {
   margin-top: 19px;
 }
+
 .filter-brand {
   margin-top: 17px;
 }
+
 .filter-price::after,
 .filter-brand::after {
   display: block;
@@ -1855,8 +1871,6 @@ background-position: 55px 12px;
   width: 220px;
   height: 1px;
   background-color: var(--light-gray-boder);
-  /* position: absolute; */
-  /* top: 25px; */
 }
 
 .filter-radio {
@@ -1865,23 +1879,6 @@ background-position: 55px 12px;
 
 .filter-radio:first-child {
   margin-top: 23px;
-}
-
-/*
-.power-type-legend::before {
-  content: "";
-  width: 220px;
-  height: 1px;
-  background-color: var(--light-gray-boder);
-  position: absolute;
-  top: -18px;
-}
- */
-
-.filter-option label {
-  font-size: 15px;
-  line-height: 19px;
-  text-transform: uppercase;
 }
 
 .filter-button {
