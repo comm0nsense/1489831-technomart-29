@@ -53,6 +53,7 @@
   --gray-shadow: #ABABAB;
   --gray-range-controls-scale: #D7DCDE;
   --gray-range-controls-shadaw: rgba(171, 171, 171, 0.3);
+  --gray-filter-hover: #B5B5B5;
 }
 
 /* Global */
@@ -1779,15 +1780,15 @@ p.info-general {
 }
 
 .filter-input-checkbox + label::before {
-  content: "";
-  /* content: url("../img/files/checkbox-off.svg"); */
+  /* content: ""; */
+  content: url("../img/files/checkbox-off.svg");
   position: absolute;
   width: 23px;
   height: 23px;
-  background-image: url("../img/files/checkbox-off.svg");
+  /* background-image: url("../img/files/checkbox-off.svg"); */
   cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  /* background-repeat: no-repeat; */
+  /* background-position: 0 0; */
   left: 0px;
   top: -5px;
 }
@@ -1807,7 +1808,6 @@ p.info-general {
 
 .filter-input-checkbox:hover + label::before {
   content: "";
-  /* content: url("../img/files/checkbox-off.svg"); */
   position: absolute;
   width: 23px;
   height: 23px;
@@ -1832,7 +1832,9 @@ p.info-general {
   top: -5px;
 }
 
-.filter-input-radio+label::before {
+
+
+.filter-input-radio + label::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -1840,18 +1842,42 @@ p.info-general {
   border: 4px solid var(--light-gray-border-hover);
   box-sizing: border-box;
   border-radius: 50%;
-  left: -35px;
-  top: -5px;
+  left: 0px;
+  top: -2px;
 }
 
-.filter-input-radio:checked+label::after {
+.filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 3px;
-  left: -27px;
+  top: 6px;
+  left: 8px;
   width: 9px;
   height: 9px;
   background-color: var(--light-gray-border-hover);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.filter-input-radio:hover + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 4px solid var(--gray-filter-hover);
+  box-sizing: border-box;
+  border-radius: 50%;
+  left: 0px;
+  top: -2px;
+}
+
+.filter-input-radio:checked:hover + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  width: 9px;
+  height: 9px;
+  background-color: var(--gray-filter-hover);
   border-radius: 50%;
   box-sizing: border-box;
 }
